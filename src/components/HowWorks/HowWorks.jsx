@@ -8,7 +8,7 @@ export default function HowWorks() {
     return <>
         <div className='py-14 pb-5 border-t-[.5px]  border-t-[#cdcdcd]'>
             <div className='text-center '>
-                <h2 className='font-bold text-3xl text-[#333333] '>Browse The Range</h2>
+                <h2 className='font-bold text-3xl text-[#333333] '>How It Works</h2>
                 <p className='text-[#666666] '>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
             <div className="flex justify-center items-start gap-x-12 py-20">
