@@ -1,5 +1,5 @@
 import React from 'react'
-import errorImg from '../../assets/images/404.gif'
+import errorImg from '../../assets/images/404new.gif'
 
 export default function Notfound() {
     return (
