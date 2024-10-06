@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* CSS for hiding the section initially and making it visible with animation */
+.slide-in-hidden {
+    transform: translateY(50px);
+    /* Slide up animation */
+    opacity: 0;
+    /* Invisible at start */
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+    /* Smooth transition */
+}
+
+.slide-in-visible {
+    transform: translateY(0);
+    /* Reset transform */
+    opacity: 1;
+    /* Fully visible */
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+    /* Smooth transition */
+}
