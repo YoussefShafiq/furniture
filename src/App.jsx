@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/images/SkinClinic.png'
 import './App.css'
@@ -9,6 +9,9 @@ import Home from './components/Home/Home'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Layout from './components/Layout/Layout'
 import Notfound from './components/NotFound/Notfound'
+import WOW from 'wow.js';
+import 'animate.css';
+
 
 let routers = createBrowserRouter([
   {
@@ -19,8 +22,20 @@ let routers = createBrowserRouter([
   }
 ])
 
+
+
 function App() {
   const [count, setCount] = useState(0)
+  useEffect(() => {
+    const wow = new WOW({
+      boxClass: 'wow',
+      animateClass: 'animate__animated',
+      offset: 100,
+      mobile: true,
+      live: true
+    });
+    wow.init();
+  }, []);
 
   return (
     <>
